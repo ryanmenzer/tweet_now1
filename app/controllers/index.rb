@@ -6,4 +6,5 @@ end
 post '/tweet' do
   # puts params
   Twitter.update(params[:tweet])
+  redirect to "/"
 end
